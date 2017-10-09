@@ -136,7 +136,9 @@ ____
 These elements use the `ng-file-upload` directive to convert the image into a file type that Angular can read and process.
 
 The `<button name="image" ngf-select ng-model="image">Upload image</button>` element will open a file select window that you will select image you want to upload.
+
 The `<img style="width: 300px;" ngf-thumbnail="image">` element will provide a thumbnail of the image you want to upload. This element is stylable to your liking.
+
 The `<button ng-click="submit(image)">Submit</button>` element contains a standard image tag that will pass the image into a function that will ultimately upload the picture.
 
 
