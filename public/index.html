@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Firebase Rocks</title>
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAyhf6xCAQQ1rQRxiWmal2D1T4ZnoogHWw",
+        authDomain: "brownbag-cca6d.firebaseapp.com",
+        databaseURL: "https://brownbag-cca6d.firebaseio.com",
+        projectId: "brownbag-cca6d",
+        storageBucket: "brownbag-cca6d.appspot.com",
+        messagingSenderId: "193576206092"
+    };
+    firebase.initializeApp(config);
+    </script>
     <!--
             This is where
                 your config scripts
@@ -21,6 +33,12 @@
                 your image upload buttons
                     will go 
         -->
+
+        <form name="form">
+            <img style="width: 300px;" ngf-thumbnail="image">
+            <button name="image" ngf-select ng-model="image">Upload image</button>
+            <button ng-click="submit(image)">Submit</button>
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

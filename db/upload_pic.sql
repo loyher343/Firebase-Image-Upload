@@ -1,1 +1,1 @@
-INSERT INTO pictures (picture_url) VALUES ($1);
+INSERT INTO picture (picture_url) VALUES ($1);
