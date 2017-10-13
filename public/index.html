@@ -7,15 +7,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Firebase Rocks</title>
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
-    <!--
-            This is where
-                your config scripts
-                    will go. 
-        -->
+    
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB-mk3ziwcVZtHvMrf4pfGXqAlIPPGRrTQ",
+    authDomain: "fir-upload-b4a07.firebaseapp.com",
+    databaseURL: "https://fir-upload-b4a07.firebaseio.com",
+    projectId: "fir-upload-b4a07",
+    storageBucket: 'fir-upload-b4a07.appspot.com',
+    messagingSenderId: "809903457920"
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 
 <body ng-controller="myCtrl">
     <div>
+        <form name="form">
+            <img style="width: 300px;" ngf-thumbnail="image">
+            <button name="image" ngf-select ng-model="image">Upload image</button>
+            <button ng-click="submit(image)">Submit</button>
+        </form>
         <!--
             This is where
                 your image upload buttons
@@ -25,10 +39,13 @@
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+    
     <!-- 
         MAKE SURE YOU INCLUDE YOUR ng-file-upload.js SCRIPT!!!!!
     -->
     <script src="ng-file-upload.js"></script>
+
+
     <script src="ctrl.js"></script>
     <script src="service.js"></script>
 </body>

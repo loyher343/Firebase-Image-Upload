@@ -1,0 +1,27 @@
+{
+  "name": "Firebase-Image-Upload",
+  "version": "1.0.0",
+  "description": "There are a lot of different services that allow you to upload and store images. A lot of them are confusing and take way too long to set up. To think, that's time that you could have been adding more features.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "massive": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loyher343/Firebase-Image-Upload.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loyher343/Firebase-Image-Upload/issues"
+  },
+  "homepage": "https://github.com/loyher343/Firebase-Image-Upload#readme"
+}

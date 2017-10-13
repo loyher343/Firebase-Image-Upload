@@ -1,1 +1,5 @@
-{}
+{
+  "projects": {
+    "default": "fir-upload-b4a07"
+  }
+}
